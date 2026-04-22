@@ -1138,11 +1138,12 @@
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2.5rem;
+    padding: 2rem 1.5rem;
   }
 
-  .hero-desc { max-width: 100%; }
+  .hero-desc { max-width: 100%; margin-left: auto; margin-right: auto; }
   .hero-actions { justify-content: center; }
-  .hero-social { justify-content: center; }
+  .hero-social { justify-content: center; flex-wrap: wrap; }
   .hero-badge { margin: 0 auto 1.25rem; }
 
   .hero-visual { order: -1; }
@@ -1160,9 +1161,12 @@
 @media (max-width: 600px) {
   .hero-orb { width: 200px; height: 200px; }
   .hero-avatar { width: 160px; height: 160px; font-size: 4rem; }
-  .tech-badge { display: none; }
-  .stats-row { grid-template-columns: 1fr; gap: 0.75rem; }
-  .projects-grid { grid-template-columns: 1fr; }
+  .hero-tech-badges { display: none !important; } /* Hide badges causing overflow */
+  
+  .stats-row { grid-template-columns: 1fr; gap: 1rem; }
+  .projects-grid { grid-template-columns: 1fr !important; }
+  .skills-grid { grid-template-columns: 1fr !important; }
+  
   .timeline::before { left: 16px; }
   .timeline-dot { width: 34px; height: 34px; font-size: 0.85rem; }
   
@@ -1170,10 +1174,33 @@
     display: flex !important;
     flex-direction: column !important; 
     width: 100%; 
+    max-width: 320px;
+    margin: 0 auto;
     gap: 0.75rem; 
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
   }
-  .btn-primary, .btn-secondary { width: 100%; max-width: 300px; justify-content: center; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .hero-social { 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 0.5rem;
+  }
+  .social-btn { flex: 1 1 calc(50% - 0.5rem); min-width: 120px; justify-content: center; }
+  
   .scroll-indicator { display: none !important; }
+
+  .hero-name { font-size: clamp(2rem, 10vw, 3rem); }
+  .hero-title { 
+    font-size: 0.95rem; 
+    min-height: 1.5em; 
+    margin-bottom: 1rem; 
+    width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-name { font-size: 2rem; }
+  .social-btn { flex: 1 1 100%; }
 }

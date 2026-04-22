@@ -218,4 +218,14 @@ body::before {
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   :root { --section-padding: 3.5rem 0; }
+  .container { padding: 0 1rem; }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .section-title { font-size: 1.75rem; }
 }
