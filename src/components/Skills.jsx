@@ -43,7 +43,7 @@ export default function Skills() {
   return (
     <section className="section skills-section" id="skills">
       <div className="container">
-        <span className="section-tag">// skills & technologies</span>
+        <span className="section-tag">skills & technologies</span>
         <h2 className="section-title">My Tech <span className="gradient-text">Stack</span></h2>
         <div className="divider" />
         <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>

@@ -41,7 +41,7 @@ export default function Projects() {
   return (
     <section className="section" id="projects">
       <div className="container">
-        <span className="section-tag">// featured projects</span>
+        <span className="section-tag">featured projects</span>
         <h2 className="section-title">Things I&apos;ve <span className="gradient-text">Built</span></h2>
         <div className="divider" />
         <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>

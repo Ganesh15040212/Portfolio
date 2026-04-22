@@ -17,7 +17,7 @@ export default function Certifications() {
   return (
     <section className="section" id="certifications">
       <div className="container">
-        <span className="section-tag">// achievements</span>
+        <span className="section-tag">achievements</span>
         <h2 className="section-title">Certifications &amp; <span className="gradient-text">Awards</span></h2>
         <div className="divider" />
         <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>

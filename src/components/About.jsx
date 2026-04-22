@@ -40,8 +40,8 @@ export default function About() {
                   },
                   {
                     icon: '🐙', label: 'GitHub',
-                    value: 'All-Projects',
-                    href: 'https://github.com/Ganesh15040212/All-Projects',
+                    value: 'Ganesh15040212',
+                    href: 'https://github.com/Ganesh15040212',
                   },
                 ].map((item, i) => (
                   <div className="about-info-item" key={i}>
@@ -75,7 +75,7 @@ export default function About() {
 
           {/* Right - Text */}
           <div>
-            <span className="section-tag">// about me</span>
+            <span className="section-tag">about me</span>
             <h2 className="section-title">
               Building the <span className="gradient-text">Future</span>,<br />
               One Line at a Time

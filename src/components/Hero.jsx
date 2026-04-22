@@ -111,7 +111,7 @@ export default function Hero() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/Ganesh15040212/All-Projects"
+              href="https://github.com/Ganesh15040212"
               target="_blank"
               rel="noopener noreferrer"
               className="social-btn"

@@ -23,7 +23,7 @@ const contactInfo = [
     icon: '🐙',
     label: 'GitHub',
     value: 'github.com/Ganesh15040212',
-    href: 'https://github.com/Ganesh15040212/All-Projects',
+    href: 'https://github.com/Ganesh15040212',
   },
   {
     icon: '📍',
@@ -53,7 +53,7 @@ export default function Contact() {
   return (
     <section className="section contact-section" id="contact">
       <div className="container">
-        <span className="section-tag">// contact</span>
+        <span className="section-tag">contact</span>
         <h2 className="section-title">Get In <span className="gradient-text">Touch</span></h2>
         <div className="divider" />
 

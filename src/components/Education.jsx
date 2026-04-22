@@ -34,7 +34,7 @@ export default function Education() {
   return (
     <section className="section education-section" id="education">
       <div className="container">
-        <span className="section-tag">// education</span>
+        <span className="section-tag">education</span>
         <h2 className="section-title">My <span className="gradient-text">Learning</span> Journey</h2>
         <div className="divider" />
         <p className="section-subtitle" style={{ marginBottom: '2.5rem' }}>

@@ -1161,8 +1161,19 @@
   .hero-orb { width: 200px; height: 200px; }
   .hero-avatar { width: 160px; height: 160px; font-size: 4rem; }
   .tech-badge { display: none; }
-  .stats-row { grid-template-columns: repeat(3, 1fr); }
+  .stats-row { grid-template-columns: 1fr; gap: 0.75rem; }
   .projects-grid { grid-template-columns: 1fr; }
   .timeline::before { left: 16px; }
   .timeline-dot { width: 34px; height: 34px; font-size: 0.85rem; }
+  
+  .hero-actions { 
+    display: flex !important;
+    flex-direction: column !important; 
+    width: 100%; 
+    gap: 0.75rem; 
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-primary, .btn-secondary { width: 100%; max-width: 300px; justify-content: center; }
+  .scroll-indicator { display: none !important; }
 }
